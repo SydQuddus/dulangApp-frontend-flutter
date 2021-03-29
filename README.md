@@ -1,6 +1,6 @@
 # DULANG MOBILE APP 
 
-## Dulang is a food donation application where user can add food to be donated or request available food. This app focus on reducinng food waste and thus giving it to those in needs.
+## Dulang is a food donation application where user can add food to be donated or request available food. This app focus on reducing food waste and thus giving it to those in needs.
 
 ps. For REST Api of Dulang app, please view repository called "dulangApp-backend-rest"
 
