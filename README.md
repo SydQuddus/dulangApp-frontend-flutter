@@ -1,14 +1,8 @@
-Project Deliverable #4
+# DULANG MOBILE APP 
 
-Title: DULANG 
+## Dulang is a food donation application where user can add food to be donated or request available food. This app focus on reducinng food waste and thus giving it to those in needs.
 
-Synopsis:
-Dulang is a food donation application where user can add food to be donated or request available food.
-This app focus on reducinng food waste and thus giving it to those in needs.
+ps. For REST Api of Dulang app, please view repository called "dulangApp-backend-rest"
 
-Project Presentation URL: 
-https://www.youtube.com/watch?v=6DLIEiCmG8M
-
-Git Link:
-Front end: https://github.com/BabayegaDev/project_dulang.git
-Back End: https://github.com/BabayegaDev/dulang_backend.git
+For detailed walkthrough of the project, visit:
+- [Project Presentation Video](https://www.youtube.com/watch?v=6DLIEiCmG8M)
