@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "20687353398",
+    "firebase_url": "https://dulang-backend-rest.firebaseio.com",
+    "project_id": "dulang-backend-rest",
+    "storage_bucket": "dulang-backend-rest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:20687353398:android:4da78bca007ad2be578a97",
+        "android_client_info": {
+          "package_name": "com.example.dulang_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "20687353398-f60m1ld1r02hu0qa7sbg5nhfdnjq3o2r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1As6W_6B27UwbRtWQEh_W9hV4nCMcjq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "20687353398-f60m1ld1r02hu0qa7sbg5nhfdnjq3o2r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

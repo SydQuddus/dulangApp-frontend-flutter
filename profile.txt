@@ -1,0 +1,107 @@
+import 'package:flutter/material.dart';
+//import 'package:dulang_new/models/post.dart';
+import '../shared/styles.dart';
+import '../shared/buttons.dart';
+import '../shared/colors.dart';
+import '../shared/icons.dart';
+
+class Profile extends StatefulWidget {
+  @override
+  _ProfileState createState() => _ProfileState();
+}
+
+class _ProfileState extends State<Profile> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: bgColor,
+      body: Container(
+        color: black,
+        child: Stack(
+          children: <Widget>[
+            Container(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  colors: [primaryColor, primaryColor],
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 64.0),
+              child: Column(
+                children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        width: 100.0,
+                        height: 100.0,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(color: Colors.white60, width: 2.0),
+                        ),
+                        padding: EdgeInsets.all(8.0),
+                        child: CircleAvatar(
+                          backgroundImage: NetworkImage(
+                              "https://i.pinimg.com/564x/37/e4/db/37e4db6e65b892d6cb381b2da81eb748.jpg"),
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 8.0),
+                  Text("Mimi Farhana", style: h3),
+                  Text("Member since 2020", style: h4White),
+                  SizedBox(height: 10.0),
+                  dulangMatButton("Share Account", () {}),
+                ],
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 350.0),
+              decoration: BoxDecoration(
+                color: white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 250.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20.0),
+                  topRight: Radius.circular(20.0),
+                ),
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: GridView.builder(
+                  itemCount: 8,
+                  itemBuilder: (context, index) => Card(
+                    child: Container(
+                      margin: EdgeInsets.all(4.0),
+                      color: white,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: <Widget>[
+                          Icon(
+                            Dulang.food,
+                            size: 64,
+                          ),
+                          Text("Food Name", style: blackBoldText)
+                        ],
+                      ),
+                    ),
+                  ),
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2),
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
